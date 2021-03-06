@@ -1,6 +1,8 @@
 *{
     font-family: 'Montserrat';
+    
 }
+
 .header-img{
     width: 65%;
     height: auto;
@@ -21,12 +23,11 @@
 .form-section{
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 0% 5%;
 }
 
 .form-section h2{
-    font-size: 30px;
+    font-size: 35px;
     color: #F65050;
     font-weight: bolder;
 }
@@ -56,4 +57,61 @@
     border-radius: 5px;
     box-shadow: 0px 3px 0px 0px #DE2728;
     border:none;
+}
+
+@media (min-width: 750px){
+
+    .header-img{
+        width: 40%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        
+    }
+
+    .form-section h2{
+        font-size: 30px;
+        color: #F65050;
+        font-weight: bolder;
+    }
+
+    .form-text{
+        border : 1px solid #CED4DA;
+        height: 60px;
+    }
+
+    .form-comments{
+        border : 1px solid #CED4DA;
+        height: 120px;
+    }
+    
+}
+
+@media (min-width: 1020px) {
+
+    .header-img{
+        width: 20%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .form-section{
+        display: flex;
+        flex-direction: column;
+        margin: 5% 35% 0% 35%;
+    }
+
+    .form-message {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        line-height: 50px;
+    }
+
 }
