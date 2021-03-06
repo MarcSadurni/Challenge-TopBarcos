@@ -18,14 +18,14 @@
         <h2>Envíanos tu mensaje</h2>
         <form class="form-message">
             <label>Nombre *</label>
-            <input type="text" class="form-text" required>
+            <input type="text" class="form-text" pattern="[A-Z\a-z]" required title="Debe contener únicamente letras" >
             <label>E-mail *</label>
-            <input type="text" class="form-text" required>
+            <input type="email" class="form-text" required>
             <label>Teléfono *</label>
             <input type="text" class="form-text">
             <label>Observaciones *</label>
             <input type="text" class="form-comments">
-            <button type="submit"><i class="fas fa-paper-plane"></i>  Enviar</button>
+            <button type="submit" required><i class="fas fa-paper-plane"></i>  Enviar</button>
         </form>
     </section>
 </body>
