@@ -14,12 +14,15 @@
     <header>
         <img class="header-img" src="resources/logo_OpenTiendas.png" alt="OpenTiendas">
     </header>
+    <div class="bg-color1"></div>
+    <div class="bg-color2"></div>
     <section class="form-section">
         <h2>Envíanos tu mensaje</h2>
         <div>
             <hr>
         </div>
         <form class="form-message">
+            <div class="form-questions">
             <label>Nombre *</label>
             <input type="text" id="name" class="form-text" pattern="[A-Z\a-z]" required title="Debe contener únicamente letras" >
             <label>E-mail *</label>
@@ -28,20 +31,20 @@
             <input type="text" is="phone" class="form-text" pattern="[0-9]" title="Debe contener únicamente números">
             <label>Observaciones *</label>
             <input type="text" id="obs" class="form-comments" required>
-            <button type="submit" id="send" class="boton"><i class="fas fa-paper-plane"></i>  Enviar</button>
-        </form>
-        <div class="modal-container" id="modal_container">
-            <div class="modal">
-            <span><i class="fas fa-check-circle"></i></span>
-            <p>Enviado correctamente <p>  
-              
         </div>
-
+        <div>
+            <button type="submit" id="send" class="boton"><i class="fas fa-paper-plane"></i>  Enviar</button>
+        </div>
+    </form>
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+        <span><i class="fas fa-check-circle"></i></span>
+        <p class="modal-msg">Enviado correctamente <p>
+        <p class="modal-date"></p>
     </div>
-    </section>
-    <script src="animations.js"></script>
+
+</div>
+</section>
+<script src="animations.js"></script>
 </body>
 </html>
-<!-- $.ajax({
-    url:'http://date.jsontest.com/'
-}); -->

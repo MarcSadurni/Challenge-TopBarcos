@@ -1,9 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 *{
     font-family: 'Montserrat';
     box-sizing: border-box;
-    
-    
+    margin: 0;
+    padding: 0;
 }
+
+.bg-color1{
+    background-color: #F8F9FA;
+    height: 100px;
+    position: relative;  
+}
+
+.bg-color2{
+    background-color: #A9A9AA;
+    height: 275px;
+    position: relative;
+}
+
 
 hr {
     border:none;
@@ -20,9 +36,9 @@ hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    
+    margin-top: 10px; 
 }
+
 .form-message {
     display: flex;
     flex-direction: column;
@@ -35,17 +51,29 @@ hr {
 .form-section{
     display: flex;
     flex-direction: column;
-    margin: 5% 5%;
-    box-shadow: 0px 0px 10px 10px #e3e2f2;
+    margin: 10% 5%;
+    box-shadow: 0px 10px 10px 0px #e3e2f2;
+    background-color: white;
+    position: relative;
+    top: -388px;
+    
+}
+
+.form-questions{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .form-section h2{
     font-size: 30px;
     color: #F65050;
-    font-weight: bolder;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15px auto;
 }
 
 .form-text{
@@ -65,7 +93,6 @@ hr {
 }
 
 .form-section label{
-    font-weight: bold;
     font-size: 20px;
     width: 90%;
     margin-left: auto;
@@ -85,6 +112,9 @@ hr {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-container{
@@ -107,13 +137,13 @@ hr {
 }
 
 .modal{
-    background-color: red;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding:30% 21%;
+    padding:60% 20%;
     
 }
 
@@ -134,27 +164,68 @@ hr {
         
     }
 
+    .bg-color1{
+        background-color: #F8F9FA;
+        height: 150px;
+        position: relative;  
+    }
+    
+    .bg-color2{
+        background-color: #A9A9AA;
+        height: 325px;
+        position: relative;
+    }    
+
     .form-section{
         display: flex;
         flex-direction: column;
         margin: 10% 5%;
         box-shadow: 0px 0px 10px 10px #e3e2f2;
+        background-color: white;
+        position: relative;
+        top: -505px;
     }
 
     .form-section h2{
         font-size: 30px;
         color: #F65050;
-        font-weight: bolder;
+        font-weight: 900;
     }
 
     .form-text{
         border : 1px solid #CED4DA;
         height: 60px;
+        font-size: 25px;
     }
 
     .form-comments{
         border : 1px solid #CED4DA;
         height: 120px;
+        font-size: 25px;
+    }
+
+    .modal{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding:31% 42%;
+        margin-bottom: 50px;
+    }
+
+    .fa-check-circle{
+        font-size: 200px;
+        color: green;
+    }
+
+
+    .modal-msg{
+        font-size: 30px;
+    }
+    .modal-date{
+        font-size: 30px;
     }
     
 }
@@ -173,7 +244,7 @@ hr {
     .form-section{
         display: flex;
         flex-direction: column;
-        margin: 5% 35% 0% 35%;
+        margin: 5% 35% 0% 35%
     }
 
     .form-message {
@@ -182,6 +253,12 @@ hr {
         flex-wrap: nowrap;
         width: 100%;
         line-height: 50px;
+    }
+
+    .form-questions {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
 }
