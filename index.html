@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
     <script src="https://kit.fontawesome.com/46a8aaca17.js" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Formulario Challenge TopBarcos</title>
 </head>
 <body>
@@ -16,17 +16,32 @@
     </header>
     <section class="form-section">
         <h2>Envíanos tu mensaje</h2>
+        <div>
+            <hr>
+        </div>
         <form class="form-message">
             <label>Nombre *</label>
-            <input type="text" class="form-text" pattern="[A-Z\a-z]" required title="Debe contener únicamente letras" >
+            <input type="text" id="name" class="form-text" pattern="[A-Z\a-z]" required title="Debe contener únicamente letras" >
             <label>E-mail *</label>
-            <input type="email" class="form-text" required>
-            <label>Teléfono *</label>
-            <input type="text" class="form-text">
+            <input type="email" id="email" class="form-text" required>
+            <label>Teléfono </label>
+            <input type="text" is="phone" class="form-text" pattern="[0-9]" title="Debe contener únicamente números">
             <label>Observaciones *</label>
-            <input type="text" class="form-comments">
-            <button type="submit" required><i class="fas fa-paper-plane"></i>  Enviar</button>
+            <input type="text" id="obs" class="form-comments" required>
+            <button type="submit" id="send" class="boton"><i class="fas fa-paper-plane"></i>  Enviar</button>
         </form>
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+            <span><i class="fas fa-check-circle"></i></span>
+            <p>Enviado correctamente <p>  
+              
+        </div>
+
+    </div>
     </section>
+    <script src="animations.js"></script>
 </body>
 </html>
+<!-- $.ajax({
+    url:'http://date.jsontest.com/'
+}); -->
