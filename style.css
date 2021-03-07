@@ -1,326 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-*{
-    font-family: 'Montserrat';
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.bg-color1{
-    background-color: #F8F9FA;
-    height: 100px;
-    position: relative;  
+.bg-color1 {
+  background-color: #f8f9fa;
+  height: 100px;
+  position: relative;
 }
 
-.bg-color2{
-    background-color: #A9A9AA;
-    height: 275px;
-    position: relative;
+.bg-color2 {
+  background-color: #a9a9aa;
+  height: 275px;
+  position: relative;
 }
-
 
 hr {
-    border:none;
-    height: 1px;
-    background: #dddddd;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+  border: none;
+  height: 1px;
+  background: #dddddd;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.header-img{
-    width: 65%;
+.header-img {
+  width: 65%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.form-message {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 5%;
+  box-shadow: 0px 10px 10px 0px #e3e2f2;
+  background-color: white;
+  position: relative;
+  top: -388px;
+}
+
+.form-questions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-section h2 {
+  font-size: 30px;
+  color: #f65050;
+  width: 90%;
+  margin: 15px auto;
+}
+
+.form-text {
+  border: 1px solid #ced4da;
+  height: 35px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
+
+.form-comments {
+  border: 1px solid #ced4da;
+  height: 85px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-section label {
+  font-size: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-section button {
+  background-color: #f65050;
+  color: white;
+  margin-top: 20px;
+  height: 60px;
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px #de2728;
+  border: none;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-paper-plane {
+  margin-right: 15px;
+}
+
+.modal-container {
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 60% 20%;
+}
+
+.fa-check-circle {
+  font-size: 50px;
+  color: green;
+}
+
+@media (min-width: 750px) {
+  .header-img {
+    width: 40%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px; 
-}
+    margin-top: 10px;
+  }
 
-.form-message {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-    line-height: 50px;
-    margin-bottom: 25px;
-}
+  .bg-color1 {
+    background-color: #f8f9fa;
+    height: 150px;
+    position: relative;
+  }
 
-.form-section{
+  .bg-color2 {
+    background-color: #a9a9aa;
+    height: 325px;
+    position: relative;
+  }
+
+  .form-section {
     display: flex;
     flex-direction: column;
     margin: 10% 5%;
     box-shadow: 0px 10px 10px 0px #e3e2f2;
     background-color: white;
     position: relative;
-    top: -388px;
-    
-}
+    top: -505px;
+  }
 
-.form-questions{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.form-section h2{
+  .form-section h2 {
     font-size: 30px;
-    color: #F65050;
-    width: 90%;
-    margin: 15px auto;
-}
+    color: #f65050;
+    font-weight: 900;
+  }
 
-.form-text{
-    border : 1px solid #CED4DA;
-    height: 35px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 18px;
-}
-
-.form-comments{
-    border : 1px solid #CED4DA;
-    height: 85px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.form-section label{
+  .form-section label {
     font-size: 20px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+  }
 
-.form-section button{
-    background-color: #F65050;
-    color: white;
-    margin-top: 20px;
+  .form-text {
+    border: 1px solid #ced4da;
     height: 60px;
     font-size: 25px;
-    font-weight: bolder;
-    border-radius: 5px;
-    box-shadow: 0px 3px 0px 0px #DE2728;
-    border:none;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  }
 
-.modal-container{
-   opacity: 0;
-   pointer-events: none;
-   display: flex;
-    align-items: center;
-   justify-content: center;
-   position: fixed;
-   top: 0;
-   left: 0;
-   height: 100vh;
-   width: 100vw;
+  .form-comments {
+    border: 1px solid #ced4da;
+    height: 120px;
+    font-size: 25px;
+  }
 
-}
-
-.modal-container.show{
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.modal{
+  .modal {
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding:60% 20%;
-    
-}
+    padding: 31% 42%;
+    margin-bottom: 50px;
+  }
 
-.fa-check-circle{
-    font-size: 50px;
+  .fa-check-circle {
+    font-size: 200px;
     color: green;
-}
+  }
 
-@media (min-width: 750px){
-
-    .header-img{
-        width: 40%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        
-    }
-
-    .bg-color1{
-        background-color: #F8F9FA;
-        height: 150px;
-        position: relative;  
-    }
-    
-    .bg-color2{
-        background-color: #A9A9AA;
-        height: 325px;
-        position: relative;
-    }    
-
-    .form-section{
-        display: flex;
-        flex-direction: column;
-        margin: 10% 5%;
-        box-shadow: 0px 10px 10px 0px #e3e2f2;
-        background-color: white;
-        position: relative;
-        top: -505px;
-    }
-
-    .form-section h2{
-        font-size: 30px;
-        color: #F65050;
-        font-weight: 900;
-    }
-
-    .form-section label{
-        font-size: 20px;
-        width: 100%;
-    }
-    
-
-    .form-text{
-        border : 1px solid #CED4DA;
-        height: 60px;
-        font-size: 25px;
-    }
-
-    .form-comments{
-        border : 1px solid #CED4DA;
-        height: 120px;
-        font-size: 25px;
-    }
-
-    .modal{
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding:31% 42%;
-        margin-bottom: 50px;
-    }
-
-    .fa-check-circle{
-        font-size: 200px;
-        color: green;
-    }
-
-
-    .modal-msg{
-        font-size: 30px;
-    }
-    .modal-date{
-        font-size: 30px;
-    }
-    
+  .modal-msg {
+    font-size: 30px;
+    text-align: center;
+  }
+  .modal-date {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 1020px) {
+  .bg-color2 {
+    background-color: #a9a9aa;
+    height: 225px;
+    position: relative;
+  }
 
-    .bg-color2{
-        background-color: #A9A9AA;
-        height: 225px;
-        position: relative;
-    }
+  .header-img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
 
-    .header-img{
-        width: 20%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-    }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 35% 0% 35%;
+    width: 450px;
+    height: 365px;
+    top: -365px;
+  }
 
-    .form-section{
-        display: flex;
-        flex-direction: column;
-        margin: 5% 35% 0% 35%;
-        width: 450px;
-        height: 365px;
-        top:-365px;
-    }
+  .form-section h2 {
+    font-size: 22px;
+    color: #f65050;
+    font-weight: 900;
+  }
 
-    .form-section h2{
-        font-size: 22px;
-        color: #F65050;
-        font-weight: 900;
-    }
+  .form-section label {
+    font-size: 15px;
+    width: 45%;
+  }
 
+  .form-section button {
+    background-color: #f65050;
+    color: white;
+    margin-top: 20px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px 0px #de2728;
+    border: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .form-section label{
-        font-size: 15px;
-        width: 45%;
-    }
+  .form-message {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    line-height: 40px;
+  }
 
-    .form-section button{
-        background-color: #F65050;
-        color: white;
-        margin-top: 20px;
-        height: 45px;
-        font-size: 15px;
-        font-weight: 400;
-        border-radius: 5px;
-        box-shadow: 0px 3px 0px 0px #DE2728;
-        border:none;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .form-comments {
+    border: 1px solid #ced4da;
+    height: 170px;
+    font-size: 15px;
+    width: 45%;
+  }
 
-    .form-message {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 100%;
-        line-height: 40px;
-    }
+  .form-questions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 220px;
+  }
 
-    .form-comments{
-        border : 1px solid #CED4DA;
-        height: 170px;
-        font-size: 25px;
-        width: 45%;
-    }
+  .form-text {
+    border: 1px solid #ced4da;
+    height: 30px;
+    font-size: 12px;
+    width: 45%;
+  }
 
-    .form-questions {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 220px;
-    }
-
-    .form-text{
-        border : 1px solid #CED4DA;
-        height: 30px;
-        font-size: 25px;
-        width: 45%;
-    }
-
-
+  .modal {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10% 4%;
+    margin-bottom: 50px;
+  }
 }

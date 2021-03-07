@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/46a8aaca17.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/46a8aaca17.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Formulario Challenge TopBarcos</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img class="header-img" src="resources/logo_OpenTiendas.png" alt="OpenTiendas">
+      <img
+        class="header-img"
+        src="resources/logo_OpenTiendas.png"
+        alt="OpenTiendas"
+      />
     </header>
     <div class="bg-color1"></div>
     <div class="bg-color2"></div>
     <section class="form-section">
-        <h2>Envíanos tu mensaje</h2>
+      <h2>Envíanos tu mensaje</h2>
+      <div>
+        <hr />
+      </div>
+      <form class="form-message">
+        <div class="form-questions">
+          <label>Nombre *</label>
+          <input
+            type="text"
+            id="name"
+            class="form-text"
+            required
+          />
+          <label>E-mail *</label>
+          <input type="email" id="email" class="form-text" required />
+          <label>Teléfono </label>
+          <input
+            type="text"
+            is="phone"
+            class="form-text"
+            pattern="[0-9]"
+            title="Debe contener únicamente números"
+          />
+          <label>Observaciones *</label>
+          <input type="text" id="obs" class="form-comments" required />
+        </div>
         <div>
-            <hr>
+          <button type="submit" id="send" class="boton">
+            <i class="fas fa-paper-plane"></i>Enviar
+          </button>
         </div>
-        <form class="form-message">
-            <div class="form-questions">
-            <label>Nombre *</label>
-            <input type="text" id="name" class="form-text" pattern="[A-Z\a-z]" required title="Debe contener únicamente letras" >
-            <label>E-mail *</label>
-            <input type="email" id="email" class="form-text" required>
-            <label>Teléfono </label>
-            <input type="text" is="phone" class="form-text" pattern="[0-9]" title="Debe contener únicamente números">
-            <label>Observaciones *</label>
-            <input type="text" id="obs" class="form-comments" required>
-        </div>
-        <div>
-            <button type="submit" id="send" class="boton"><i class="fas fa-paper-plane"></i>  Enviar</button>
-        </div>
-    </form>
-    <div class="modal-container" id="modal_container">
+      </form>
+      <div class="modal-container" id="modal_container">
         <div class="modal">
-        <span><i class="fas fa-check-circle"></i></span>
-        <p class="modal-msg">Enviado correctamente <p>
-        <p class="modal-date"></p>
-    </div>
-
-</div>
-</section>
-<script src="animations.js"></script>
-</body>
+          <span><i class="fas fa-check-circle"></i></span>
+          <p class="modal-msg">Enviado correctamente</p>
+          <p></p>
+          <p class="modal-date"></p>
+        </div>
+      </div>
+    </section>
+    <script src="animations.js"></script>
+  </body>
 </html>
